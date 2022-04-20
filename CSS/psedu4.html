@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      /* li:first-child {
+        color: red;
+      }
+      li:last-child {
+        color: green;
+      } */
+      /* #ul1 li:first-child {
+        color: red;
+        background-color: blueviolet;
+        padding: 10px;
+      }
+
+      #ul1 li:last-child {
+        color: orange;
+        background-color: rgb(55, 226, 43);
+        padding: 10px;
+      } */
+      body {
+        margin-bottom: 800px;
+      }
+      ul li:nth-child(even) {
+        color: red;
+        background-color: blueviolet;
+        padding: 10px;
+      }
+      ul li:nth-child(odd) {
+        color: white;
+        background-color: darkgreen;
+        padding: 10px;
+      }
+      button {
+        background-color: blueviolet;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        padding: 30px 100px;
+        font-size: 30px;
+      }
+      p {
+        background-color: darkred;
+        color: white;
+        padding: 30px;
+      }
+      p:hover {
+        background-color: limegreen;
+        color: white;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="ul1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Bootstrap</li>
+      <li>React</li>
+    </ul>
+
+    <ul id="ul2">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Bootstrap</li>
+      <li>React</li>
+    </ul>
+
+    <button>Login</button>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quia.</p>
+  </body>
+</html>
