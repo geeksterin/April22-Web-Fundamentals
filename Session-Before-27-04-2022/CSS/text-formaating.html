@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Text-Formatting Document</title>
+    <style>
+      body {
+        margin-bottom: 1000px;
+      }
+      div {
+        width: 500px;
+        border: 2px solid black;
+        margin: 100px auto;
+        padding: 20px;
+      }
+      h2 {
+        border: 2px solid red;
+        padding: 10px;
+      }
+      h2:first-child {
+        text-align: center;
+      }
+      #color h2 {
+        color: green;
+      }
+      #color h2:nth-child(2) {
+        color: rgb(86, 166, 255);
+        background-color: red;
+      }
+      #TC {
+        width: 800px;
+        height: 500px;
+        background-image: url("https://www.evokedesign.com/wp-content/uploads/2014/01/bigstock-side-view-of-a-business-man-wo-41028847.jpg");
+        background-position: center;
+        background-size: contain;
+      }
+      h3 {
+        width: 500px;
+
+        padding: 50px;
+        margin: 30px auto;
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+      a {
+        text-decoration: none;
+      }
+      h4 {
+        text-decoration: line-through;
+      }
+      #TD p {
+        text-indent: 90px;
+        letter-spacing: 5px;
+      }
+      #TD span {
+        word-spacing: 20px;
+      }
+      #boxShadow {
+        border: none;
+        width: 500px;
+        text-align: center;
+        padding: 30px;
+        box-shadow: 0px 0px 100px rgb(181, 23, 23);
+      }
+      #boxShadow h1 {
+        text-shadow: 0px 0px 5px black;
+        color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p style="font-size: xx-large; text-align: center">Text Align Property</p>
+      <h2>Welcome to Geekster</h2>
+      <h2 style="text-align: right">Welcome to Geekster</h2>
+      <h2>Welcome to Geekster</h2>
+    </div>
+
+    <div id="color">
+      <p style="font-size: xx-large; text-align: center">Color Property</p>
+      <h2>Css in Red Color</h2>
+      <h2>Css in Green Color</h2>
+    </div>
+
+    <div id="TC">
+      <h3>Transparent Color</h3>
+    </div>
+    <div id="TD">
+      <h4>Geekster</h4>
+      <a href="">Anchor Element</a>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+        inventore provident aperiam! Laboriosam optio ad laudantium quam
+        veritatis dolore adipisci dolor ducimus deserunt voluptatibus cumque sed
+        ex, accusamus nostrum similique. Voluptatem vitae blanditiis natus?
+        Excepturi officia aspernatur, ea, eligendi quo cum, provident ipsum
+        illum incidunt veniam repudiandae similique iusto nemo!
+      </p>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus
+        asperiores dicta voluptas quo ab sed harum tempora distinctio ea.
+        Reiciendis perspiciatis iure libero sit quod rem dolorem sapiente
+        consequatur at perferendis. Deserunt minus asperiores praesentium
+        suscipit modi quidem obcaecati laborum facilis soluta dolore rem culpa
+        sequi voluptatibus rerum accusamus repudiandae veniam accusantium
+        doloribus dicta, ipsum non, fugiat repellendus at. Molestiae accusamus
+        velit ab inventore! Qui neque omnis sed incidunt.</span
+      >
+    </div>
+
+    <div id="boxShadow">
+      <h1>Box Shadow</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+        consequuntur recusandae corrupti qui numquam maxime voluptatibus quidem
+        voluptatum doloribus quas nemo, accusantium corporis fugiat ex iure
+        perferendis maiores pariatur consequatur consectetur amet mollitia
+        tenetur! Enim repellendus quod saepe velit libero, eligendi est quas
+        exercitationem laboriosam atque ab veniam corporis. Accusantium
+        voluptatum voluptatem vitae adipisci inventore placeat est enim, ea
+        nisi.
+      </p>
+    </div>
+  </body>
+</html>
