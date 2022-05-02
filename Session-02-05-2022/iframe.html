@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iframe Document</title>
+    <style>
+      #menu div {
+        background-color: orangered;
+
+        padding: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+      }
+      #menu {
+        flex: 1;
+        padding: 5px;
+        border-right: 2px solid black;
+      }
+      #iframe {
+        flex: 4;
+      }
+      iframe {
+        padding: 5px;
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="menu">
+        <div>
+          <a href="htmlHome.html" target="rightPanel">HTML</a>
+        </div>
+
+        <div>
+          <a href="CssHome.html" target="rightPanel">CSS</a>
+        </div>
+        <div>
+          <a href="">JAVA SCRIPT</a>
+        </div>
+        <div>
+          <a href="">React</a>
+        </div>
+        <div>
+          <a href="">Java with DSA</a>
+        </div>
+      </div>
+
+      <div id="iframe">
+        <iframe name="rightPanel"> </iframe>
+      </div>
+    </div>
+  </body>
+</html>
