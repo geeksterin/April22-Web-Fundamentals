@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="container banner" id="banner">
+        <div class="image">
+          <img src="./images/banner-img.png" alt="banner-img" />
+        </div>
+        <div class="content">
+          <p class="title">Hey! I'm <span>Suman Ghosh</span></p>
+          <p class="desc">I am a Software Developer at Navi.</p>
+          <button class="btn" onclick="window.location.href = '#about';">About Me</button>
+        </div>
+      </div>
+
+      <div class="container about" id="about">
+        <div class="content">
+          <p class="title">About Me</p>
+          <p class="desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="image">
+          <img src="./images/aboutme.jpg" alt="about-img" />
+        </div>
+      </div>
+
+      <div class="container skills" id="skills">
+        <div class="content">
+          <p class="title">Skills</p>
+          <div class="grid-container">
+            <div class="grid-item grid-item-1">
+              <i class="fa-brands fa-html5"></i>HTML
+            </div>
+            <div class="grid-item grid-item-2">
+              <i class="fa-brands fa-css3"></i>CSS
+            </div>
+            <div class="grid-item grid-item-3">
+              <i class="fa-brands fa-js"></i>Javascript
+            </div>
+            <div class="grid-item grid-item-4">
+              <i class="fa-brands fa-bootstrap"></i>Bootstrap
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container contact" id="contact">
+        <div class="image">
+          <img src="./images/contact.png" alt="contact-img" />
+        </div>
+        <div class="content">
+          <p class="title">Get in touch with me here!</p>
+          <form action="/action_page.php" class="form">
+            <div class="field">
+              <label for="email" class="title">Your email id:</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value="email@gmail.com"
+                class="input"
+              />
+            </div>
+            <div class="field">
+              <label for="lname" class="title">Message for me:</label><br />
+              <input
+                type="text"
+                id="msg"
+                name="msg"
+                value="Hi! there"
+                class="input"
+              />
+            </div>
+
+            <input type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </div>
+        <div class="footer" id="footer">
+            <div class="footer-title">
+                <h2>Suman Ghosh</h2>
+                <div class="social-sites">
+                    <div class="footer-icons">
+                        <a href="#" class="ico">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>© <span id="year"></span>
+                            <script>
+                                var d = new Date();
+                                var n = d.getFullYear();
+                                document.getElementById("year").innerHTML = n;
+                            </script>
+                            copyright all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,228 @@
+/* navbar style */
+.navbar {
+  position: fixed;
+  top: 0%;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 6%);
+  width: 100%;
+  background-color: #fff;
+}
+ul {
+  list-style-type: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 0%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 25px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+}
+
+/* banner section */
+.container {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 6% 0%;
+}
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  background-color: #dcdfb7;
+}
+.banner .image img {
+  width: 100%;
+}
+
+.banner .content {
+  font-family: "Lato", sans-serif;
+  padding: 25% 4%;
+}
+
+.content .title {
+  font-size: 50px;
+  margin: 0%;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.content .desc {
+  font-size: 26px;
+}
+
+.content .btn {
+  background-color: #6b8363;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2% 5%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* about section */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.about .image img {
+  width: 80%;
+}
+
+.about .content {
+  font-family: "Lato", sans-serif;
+  padding: 20% 13%;
+}
+
+.about .content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0%;
+}
+
+.about .content .desc {
+  font-size: 19px;
+}
+
+/* skils section */
+.skills .content {
+  font-family: "Lato", sans-serif;
+  padding: 2% 13%;
+  background-color: #dcdfb7;
+}
+
+.skills .content .title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 4%;
+  text-align: center;
+}
+.skills .content .desc {
+  font-size: 19px;
+}
+
+.skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+
+.skills .grid-item {
+  border: 1px solid #ddd;
+  padding: 7% 6%;
+  border-bottom: 5px solid #6b8363;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.skills .grid-item .fa-brands {
+  margin-right: 8%;
+  font-size: 19px;
+  color: #6b8363;
+}
+
+/* contact section */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.contact .image img {
+  width: 80%;
+}
+
+.contact .content {
+  font-family: "Lato", sans-serif;
+  padding: 10% 13%;
+}
+
+.contact .content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0%;
+}
+
+.contact .content .form {
+  padding: 2% 0%;
+}
+
+.contact .content .form .field {
+  padding: 2% 0%;
+}
+
+.contact .content .form .title {
+  font-size: 16px;
+}
+.contact .content .form .input {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  width: 55%;
+  padding: 2% 2%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 2%;
+}
+
+.contact .content .btn {
+  background-color: #6b8363;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2% 10%;
+  margin-top: 3%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer section */
+.footer {
+  width: 100%;
+  background-color: #6b8363;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #fff;
+  padding: 2% 0;
+}
+
+.footer .footer-title h2 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 30px;
+}
+
+.footer .social-sites .footer-icons a {
+  text-decoration: none !important;
+  background-color: transparent !important;
+  color: #fff;
+  padding: 10px 12px;
+  margin-right: 30px;
+}
+
+.footer .social-sites .footer-icons a:hover {
+  color: #fff;
+}
+
+.footer .footer-icons a .fab {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer .social-sites p {
+  font-size: 15px;
+  padding: 35px 0px;
+  color: #fff;
+}
