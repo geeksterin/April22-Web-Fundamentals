@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>DOM</title>
+    <style></style>
+    <script>
+      function fn() {
+        document.getElementById("h2Ref").innerText =
+          "Hello Kabir and Welcome to Javascript";
+
+        document.getElementById("h2Ref").style.color = "red";
+
+        document.getElementById("b1").style.backgroundColor = "lightcoral";
+      }
+    </script>
+  </head>
+
+  <body id="b1">
+    <div>
+      <div>
+        <h2 id="h2Ref">Welcome to HTML</h2>
+      </div>
+
+      <div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+          veniam?
+        </p>
+      </div>
+      <button onclick="fn()">Change Content</button>
+    </div>
+  </body>
+</html>

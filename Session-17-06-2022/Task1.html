@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fn() {
+        var h2Reference = document.getElementById("h2Ref");
+        var h4Reference = document.getElementById("h4Ref");
+        var pReference = document.getElementById("pRef");
+
+        h2Reference.innerText = "Javascript"; //red
+        h4Reference.innerText = "DOM Manipulation"; // green
+        pReference.innerText = "This is JS Content"; // coral
+
+        h2Reference.style.color = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2Ref">HTML</h2>
+    <h4 id="h4Ref">HTML Tags Concept</h4>
+    <p id="pRef">This is HTML Content</p>
+    <button onclick="fn()">Change to JS</button>
+  </body>
+</html>

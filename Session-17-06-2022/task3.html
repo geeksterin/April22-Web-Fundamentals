@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script>
+      function fn() {
+        var h2reference = document.getelementbyid("h2ref");
+        var h3reference = document.getelementbyid("h3ref");
+        var p1reference = document.getelementbyid("p1");
+
+        h2reference.innertext = "javascript";
+        h3reference.innertext = "DOM manipulation";
+        p1reference.innertext = "this is javascript";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2ref">HTML</h2>
+    <h3 id="h3ref">tag concept</h3>
+    <p id="p1">this is html code</p>
+    <button onclick="fn()">change to js</button>
+  </body>
+</html>

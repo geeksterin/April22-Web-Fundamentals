@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        padding: 30px;
+        text-align: center;
+        margin: 100px auto;
+      }
+    </style>
+
+    <script>
+      function changePlaceholder() {
+        var inputReference = document.getElementById("i1");
+        var divReference = document.getElementById("d1");
+
+        inputReference.placeholder = "Text Changed on button click";
+        divReference.style.backgroundColor = "lightcoral";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      <h2>Change Placeholder Text</h2>
+      NAME:<input id="i1" type="password" placeholder="Enter Text" />
+      <button onclick="changePlaceholder()">Change Placeholder</button>
+    </div>
+  </body>
+</html>

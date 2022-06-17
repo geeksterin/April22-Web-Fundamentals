@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script>
+      function changeH2() {
+        //get the Reference of h2 element
+        var h2Reference = document.getElementById("h2Ref");
+        var pReference = document.getElementById("p1");
+
+        //update the value of innerText Property
+        h2Reference.innerText = "Hello, Javascript";
+        pReference.innerText = "This is Javascript Code";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 id="h2Ref">Welcome to HTML</h2>
+    <p id="p1">This is html Document Code</p>
+    <button onclick="changeH2()">Do Action</button>
+  </body>
+</html>
