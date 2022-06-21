@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      var olRef = document.createElement("ol"); // 1
+      function fnCreateElement() {
+        var inputRef = document.getElementById("i1"); //2
+        var divRef = document.querySelector("div"); //3
+        var inputValue = inputRef.value; //4
+
+        //create ol tag and li tag
+        // <ol>   </ol>                   //5
+        var liRef = document.createElement("li"); //<li>  </li>
+        //6
+        olRef.appendChild(liRef); // <ol> <li> </li> </ol>
+        //7
+        liRef.innerText = inputValue; // <ol><li>Apple</li></ol>
+        //8
+        divRef.appendChild(olRef); //<div> <ol><li>Apple</li></ol>  </div>
+      }
+    </script>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="i1" type="text" placeholder="Enter Text" />
+      <button onclick="fnCreateElement()">Submit</button>
+    </div>
+  </body>
+</html>

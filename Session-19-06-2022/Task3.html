@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+      }
+    </style>
+    <script>
+      function getData() {
+        var inputRef = document.getElementById("i1");
+        var h2Ref = document.getElementById("h2Ref");
+
+        // var inputValue = inputRef.value;
+        // h2Ref.innerText = inputValue;
+
+        h2Ref.innerText = inputRef.value;
+        inputRef.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input id="i1" type="text" placeholder="Enter Text" value="Geekster" />
+      <button onclick="getData()">Submit</button>
+
+      <h2 id="h2Ref">No data</h2>
+    </div>
+  </body>
+</html>

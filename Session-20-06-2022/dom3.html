@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <script src="user.js"></script>
+    <style>
+      body {
+        height: 8000px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">User Management</a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Users</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">ContactUs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h2>User Details</h2>
+          <p class="lead">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut id
+            voluptatibus corrupti beatae consectetur voluptatum doloremque sed
+            voluptatem eveniet? Vero hic quam quos quibusdam blanditiis non,
+            perferendis voluptas nam reiciendis, id voluptatibus eius labore
+            molestiae nemo nostrum voluptatum molestias repellat culpa? Fugit
+            fugiat unde veniam nostrum suscipit accusantium necessitatibus
+            incidunt modi molestias, dolores expedita vero. Quaerat aliquam
+            nobis tenetur accusamus facere laborum ex quisquam vel, quidem omnis
+            optio illo neque quas numquam doloremque beatae dolorem voluptas.
+            Neque asperiores non fugit.
+          </p>
+          <button id="show" class="btn btn-primary mx-3" onclick="showTable()">
+            Show Table
+          </button>
+          <button
+            id="hide"
+            disabled
+            class="btn btn-primary mx-3"
+            onclick="hideTable()"
+          >
+            Hide Table
+          </button>
+        </div>
+      </div>
+      <div class="row my-5" id="radio" style="display: none">
+        <div class="col-4">
+          <input type="radio" name="gender" onclick="fnFilter('all')" />ALL
+        </div>
+        <div class="col-4">
+          <input type="radio" name="gender" onclick="fnFilter('male')" />MALE
+        </div>
+        <div class="col-4">
+          <input
+            type="radio"
+            name="gender"
+            onclick="fnFilter('female')"
+          />FEMALE
+        </div>
+      </div>
+
+      <div id="tableDiv" class="row mt-5" style="display: none">
+        <div class="col">
+          <table class="table table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>IMAGE</th>
+                <th>NAME</th>
+                <th>GENDER</th>
+                <th>CITY</th>
+                <th>EMAIL</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

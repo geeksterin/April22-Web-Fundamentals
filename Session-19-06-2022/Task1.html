@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeImageToFamily() {
+        var imgReference = document.getElementById("img1");
+        imgReference.src =
+          "https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+      }
+
+      function changeImageToFriend() {
+        var imgReference = document.getElementById("img1");
+        imgReference.src =
+          "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        imgReference.style.borderRadius = "50%";
+      }
+    </script>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        id="img1"
+        src="https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        width="300"
+        height="300"
+      /><br /><br />
+      <button onclick="changeImageToFriend()">Friend</button>
+      <button onclick="changeImageToFamily()">Family</button>
+    </div>
+  </body>
+</html>

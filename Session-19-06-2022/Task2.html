@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+      }
+    </style>
+    <script>
+      function fnShowHidePassword() {
+        var inputReference = document.getElementById("i1");
+        var buttonReference = document.getElementById("btn");
+
+        if (inputReference.type === "password") {
+          inputReference.type = "text";
+          buttonReference.innerHTML = "Hide Password";
+        } else {
+          inputReference.type = "password";
+          buttonReference.innerHTML = "Show Password";
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Show/Hide Password</h2>
+      <input
+        id="i1"
+        type="password"
+        placeholder="Enter password"
+        value="KabirSagar"
+      />
+      <button id="btn" onclick="fnShowHidePassword()">Show Password</button>
+    </div>
+  </body>
+</html>

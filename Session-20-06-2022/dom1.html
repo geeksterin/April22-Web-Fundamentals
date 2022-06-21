@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fnCreateElement() {
+        var inputRef = document.querySelector("#i1");
+        // create h2 Element
+        var h2Ref = document.createElement("h2"); // <h2>   </h2>
+
+        h2Ref.innerText = inputRef.value; // <h2> 1234 </h2>
+
+        document.querySelector("div").appendChild(h2Ref);
+      }
+    </script>
+    <style>
+      div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="i1" type="text" placeholder="Enter Text" />
+      <button onclick="fnCreateElement()">Submit</button>
+    </div>
+  </body>
+</html>
