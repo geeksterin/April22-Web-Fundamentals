@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn() {
+        var arr = [];
+        var h2ref = document.getElementById("h2ref");
+        console.log(h2ref);
+        for (const key in h2ref) {
+          arr.push(key);
+          arr.sort();
+          console.log(arr);
+        }
+        for (const iterator of arr) {
+          document.write(iterator);
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2ref">Hi</h2>
+    <button onclick="fn()">Click</button>
+  </body>
+</html>

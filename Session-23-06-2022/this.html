@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      var obj = {
+        name: "Geekster",
+        print: function () {
+          console.log(this.name);
+        },
+      };
+      function fn() {
+        console.log(this.document);
+        obj.print();
+      }
+      fn();
+    </script>
+  </head>
+  <body>
+    <h2>Window</h2>
+  </body>
+</html>

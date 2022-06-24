@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function displayDocumentObject() {
+        var h2Reference = document.getElementById("h2Ref");
+        var obj = {
+          name: "Kabir",
+          city: "Delhi",
+          phone: 99999999,
+        };
+
+        // for (var property in obj) {
+        //   document.write(property + ":" + obj[property]);
+        //   document.write("<br>");
+        // }
+
+        for (var property in h2Reference) {
+          document.write(property);
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2Ref">Document Object</h2>
+    <button onclick="displayDocumentObject()">Print</button>
+  </body>
+</html>

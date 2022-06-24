@@ -1,4 +1,4 @@
-// var rows = [];
+var rows = [];
 
 var user = [
   {
@@ -45,7 +45,7 @@ var user = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam at assumenda natus et dignissimos? Cumque, magni labore iure culpa quia, eum,earum id placeat impedit velit voluptates corrupti accusantium ea?",
   },
 ];
-
+var filteredArray = user;
 function showTable() {
   var divTable = document.getElementById("tableDiv");
   var radioRow = document.getElementById("radio");
@@ -54,10 +54,10 @@ function showTable() {
   var hideBtn = document.getElementById("hide");
   var tbody = document.getElementById("tbody");
 
-  user.map(function (ele, index) {
+  filteredArray.map(function (ele, index) {
     var tr = document.createElement("tr");
     tr.id = "tr" + (index + 1);
-    // rows.push(tr.id)
+    rows.push(tr.id);
 
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
@@ -86,9 +86,26 @@ function showTable() {
   });
 
   divTable.style.display = "block";
-  radioRow.style.display = "block";
+  // radioRow.style.display = "block";
+  radioRow.removeAttribute("style");
   showBtn.disabled = true;
   hideBtn.disabled = false;
+}
+
+function removeRow() {
+  // var tr1 = document.getElementById("tr1");
+  // var tr2 = document.getElementById("tr2");
+  // var tr3 = document.getElementById("tr3");
+  // var tr4 = document.getElementById("tr4");
+  // tr1.remove();
+  // tr2.remove();
+  // tr3.remove();
+  // tr4.remove();
+
+  rows.map(function (ele) {
+    document.getElementById(ele).remove();
+  });
+  rows = [];
 }
 
 function hideTable() {
@@ -97,25 +114,28 @@ function hideTable() {
   var showBtn = document.getElementById("show");
   var hideBtn = document.getElementById("hide");
 
-  var tr1 = document.getElementById("tr1");
-  var tr2 = document.getElementById("tr2");
-  var tr3 = document.getElementById("tr3");
-  var tr4 = document.getElementById("tr4");
-
-  //remove()
-
   divTable.style.display = "none";
   radioRow.style.display = "none";
 
   showBtn.disabled = false;
   hideBtn.disabled = true;
-
-  tr1.remove();
-  tr2.remove();
-  tr3.remove();
-  tr4.remove();
+  removeRow();
 }
 
 function fnFilter(value) {
-  //   alert(value);
+  if (value === "male") {
+    filteredArray = user.filter(function (ele) {
+      return ele.gender === "male";
+    });
+  } else if (value === "female") {
+    filteredArray = user.filter(function (ele) {
+      return ele.gender === "female";
+    });
+  } else {
+    filteredArray = user;
+  }
+
+  // hideTable();
+  removeRow();
+  showTable();
 }
